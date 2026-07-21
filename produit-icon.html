@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dégradées — LUXFRAME Paris</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="promo-bar">
+    🔥 <span>20 €</span> — Livraison <span>GRATUITE</span> 48-72h — 🎁 2 achetées = 3ème offerte !
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">LUX<span>FRAME</span> Paris</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#collection">Collection</a></li>
+          <li><a href="index.html#avis">Avis</a></li>
+          <li><a href="panier.html">Panier</a></li>
+        </ul>
+      </nav>
+      <a href="panier.html" class="cart-btn">
+        🛒 Panier
+        <span id="cart-badge" class="cart-badge hidden">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div class="container">
+      <div class="product-layout">
+
+        <!-- Visuel gauche -->
+        <div class="product-visuel">
+          <div id="product-svg-container"></div>
+        </div>
+
+        <!-- Détails droite -->
+        <div class="product-details">
+          <h1 id="product-name">Lunettes polarisées</h1>
+          <p class="product-subtitle" id="product-subtitle">Monture épaisse carrée rétro</p>
+
+          <div class="product-price-row">
+            <span class="price-main">20,00 €</span>
+            <span class="price-label">Prix unique — toutes couleurs</span>
+          </div>
+
+          <div class="offer-box">
+            🎁 <strong>Offre 2+1 :</strong> commandez 3 paires et payez-en seulement 2 !<br>
+            Commandez 6 paires → payez-en 4 ! L'offre s'applique automatiquement dans votre panier.
+          </div>
+
+          <!-- Sélecteur Couleur -->
+          <div class="form-group">
+            <label for="color-select">Couleur / Modèle</label>
+            <select id="color-select"></select>
+          </div>
+
+          <!-- Sélecteur Quantité -->
+          <div class="form-group">
+            <label for="qty-select">Quantité</label>
+            <select id="qty-select">
+              <option value="1">1 paire</option>
+              <option value="2">2 paires</option>
+              <option value="3">3 paires <em>(1 offerte !)</em></option>
+              <option value="4">4 paires</option>
+              <option value="5">5 paires</option>
+              <option value="6">6 paires <em>(2 offertes !)</em></option>
+              <option value="7">7 paires</option>
+              <option value="8">8 paires</option>
+              <option value="9">9 paires <em>(3 offertes !)</em></option>
+              <option value="10">10 paires</option>
+            </select>
+            <p class="qty-hint">📦 L'offre <strong>2+1</strong> s'applique automatiquement : <em>3 paires = 1 offerte</em>, 6 paires = 2 offertes…</p>
+          </div>
+
+          <button id="btn-add-to-cart" class="btn-add-cart">🛒 Ajouter au panier</button>
+
+          <div class="reassurance">
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>
+              Expédition 24h
+            </div>
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>
+              Retours gratuits 30j
+            </div>
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>
+              Paiement sécurisé
+            </div>
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>
+              Livraison gratuite
+            </div>
+          </div>
+
+          <div class="other-model-link">
+            👓 Vous cherchez un style différent ? → <a href="produit-cartier.html">Lunettes dégradées — Style Cartier</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">LUX<span>FRAME</span> Paris</span>
+        <p>Des lunettes de soleil tendance à prix canon.</p>
+        
+      </div>
+      <div class="footer-col">
+        <h4>Boutique</h4>
+        <ul>
+          <li><a href="produit-icon.html">Polarisées — Carrée Rétro</a></li>
+          <li><a href="produit-cartier.html">Dégradées — Style Cartier</a></li>
+          <li><a href="panier.html">Panier</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Aide</h4>
+        <ul>
+          <li><a href="#">Livraison 48-72h</a></li>
+          <li><a href="#">Retours & Remboursements</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos Engagements</h4>
+        <ul>
+          <li>✓ Livraison gratuite 48-72h</li>
+          <li>✓ Retour gratuit 30 jours</li>
+          <li>✓ Paiement 100% sécurisé</li>
+          <li>✓ Offre 2+1 permanente</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 LUXFRAME Paris
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initProductSelector('icon');
+    });
+  </script>
+</body>
+</html>

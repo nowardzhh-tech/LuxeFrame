@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commander — LUXFRAME Paris</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="promo-bar">
+    🔥 <span>20 €</span> — Livraison <span>GRATUITE</span> 48-72h — 🎁 2 achetées = 3ème offerte !
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">LUX<span>FRAME</span> Paris</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#collection">Collection</a></li>
+          <li><a href="index.html#avis">Avis</a></li>
+          <li><a href="panier.html">Panier</a></li>
+        </ul>
+      </nav>
+      <a href="panier.html" class="cart-btn">
+        🛒 Panier
+        <span id="cart-badge" class="cart-badge hidden">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="order-page">
+    <div class="container">
+      <div class="order-layout">
+
+        <!-- Formulaire -->
+        <div class="order-form">
+          <h1>Finaliser la commande</h1>
+          <form id="order-form" class="form-box" novalidate>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Marie" required>
+              </div>
+              <div class="form-field">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" placeholder="Dupont" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Adresse e-mail *</label>
+              <input type="email" id="email" name="email" placeholder="marie.dupont@email.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="adresse">Adresse de livraison *</label>
+              <input type="text" id="adresse" name="adresse" placeholder="12 rue des Lilas" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cp">Code postal *</label>
+                <input type="text" id="cp" name="cp" placeholder="75001" maxlength="5" required>
+              </div>
+              <div class="form-field">
+                <label for="ville">Ville *</label>
+                <input type="text" id="ville" name="ville" placeholder="Paris" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="pays">Pays</label>
+              <select id="pays" name="pays">
+                <option value="FR" selected>France</option>
+                <option value="BE">Belgique</option>
+                <option value="CH">Suisse</option>
+                <option value="LU">Luxembourg</option>
+                <option value="CA">Canada</option>
+                <option value="MC">Monaco</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-order">✅ Confirmer ma commande</button>
+
+          </form>
+        </div>
+
+        <!-- Récap latéral -->
+        <div class="order-summary">
+          <h2>Récapitulatif</h2>
+          <div class="order-items" id="order-recap-items"></div>
+
+          <div class="summary-row">
+            <span>Sous-total</span>
+            <span id="order-subtotal">—</span>
+          </div>
+          <div class="summary-row" id="order-discount-row" style="display:none">
+            <span>Offre 2+1</span>
+            <span class="discount" id="order-discount-amount">—</span>
+          </div>
+          <div class="summary-row">
+            <span>Livraison</span>
+            <span class="free-ship">GRATUITE</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span id="order-total-display">— €</span>
+          </div>
+
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid #e9ecef;">
+            <p style="font-size:0.85rem;color:#888;margin-bottom:10px;">🔒 Paiement 100% sécurisé —SSL</p>
+            <p style="font-size:0.85rem;color:#888;">🚚 Livraison 48-72h — gratuite</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">LUX<span>FRAME</span> Paris</span>
+        <p>Des lunettes de soleil tendance à prix canon.</p>
+        
+      </div>
+      <div class="footer-col">
+        <h4>Boutique</h4>
+        <ul>
+          <li><a href="produit-icon.html">ICON — Carrée Rétro</a></li>
+          <li><a href="produit-cartier.html">PRESTIGE — Style Cartier</a></li>
+          <li><a href="panier.html">Panier</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Aide</h4>
+        <ul>
+          <li><a href="#">Livraison 48-72h</a></li>
+          <li><a href="#">Retours & Remboursements</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos Engagements</h4>
+        <ul>
+          <li>✓ Livraison gratuite 48-72h</li>
+          <li>✓ Retour gratuit 30 jours</li>
+          <li>✓ Paiement 100% sécurisé</li>
+          <li>✓ Offre 2+1 permanente</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 LUXFRAME Paris
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initOrderPage();
+
+      // Remplir le récapitulatif côté JS
+      var cart = JSON.parse(localStorage.getItem('luxframe_cart') || '[]');
+      var totalQty = cart.reduce(function(s,i){ return s+i.qty; }, 0);
+      var freebies = Math.floor(totalQty / 3);
+      var subtotal = totalQty * 20;
+      var discount = freebies * 20;
+      var total = subtotal - discount;
+
+      var subtotalEl = document.getElementById('order-subtotal');
+      if (subtotalEl) subtotalEl.textContent = subtotal.toFixed(2) + ' €';
+
+      var discountRow = document.getElementById('order-discount-row');
+      var discountAmt = document.getElementById('order-discount-amount');
+      if (discount > 0) {
+        if (discountRow) discountRow.style.display = '';
+        if (discountAmt) discountAmt.textContent = '−' + discount.toFixed(2) + ' €';
+      }
+
+      // Validation simple du formulaire
+      var form = document.getElementById('order-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          var champs = ['prenom','nom','email','adresse','cp','ville'];
+          var valid = true;
+          champs.forEach(function(id) {
+            var el = document.getElementById(id);
+            if (el && !el.value.trim()) {
+              el.classList.add('error');
+              valid = false;
+            } else if (el) {
+              el.classList.remove('error');
+            }
+          });
+          var email = document.getElementById('email');
+          if (email && email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+            email.classList.add('error');
+            valid = false;
+          }
+          if (!valid) {
+            e.preventDefault();
+            alert('Merci de remplir tous les champs obligatoires.');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

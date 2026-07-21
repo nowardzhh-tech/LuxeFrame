@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commande confirmée — LUXFRAME Paris</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="promo-bar">
+    🔥 <span>20 €</span> — Livraison <span>GRATUITE</span> 48-72h — 🎁 2 achetées = 3ème offerte !
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">LUX<span>FRAME</span> Paris</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#collection">Collection</a></li>
+          <li><a href="index.html#avis">Avis</a></li>
+          <li><a href="panier.html">Panier</a></li>
+        </ul>
+      </nav>
+      <a href="panier.html" class="cart-btn">
+        🛒 Panier
+        <span id="cart-badge" class="cart-badge hidden">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="confirm-page">
+    <div class="container">
+      <div class="confirm-card">
+        <div class="confirm-icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+        </div>
+        <h1>Commande confirmée !</h1>
+        <p>
+          Merci pour votre commande. Elle sera expédiée dans les <strong>24 heures</strong>.<br>
+          Votre colis arrivera sous <strong>48 à 72 heures</strong>, en livraison gratuite.<br>
+          Un e-mail de suivi vous sera envoyé automatiquement.
+        </p>
+
+        <div class="confirm-amount">
+          <div class="label">Montant réglé</div>
+          <div class="amount" id="confirm-amount">— €</div>
+        </div>
+
+        
+
+        <a href="index.html" class="btn-primary" style="display:inline-block;padding:14px 36px;border-radius:12px;font-size:1rem;">
+          ← Retour à la boutique
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">LUX<span>FRAME</span> Paris</span>
+        <p>Des lunettes de soleil tendance à prix canon.</p>
+        
+      </div>
+      <div class="footer-col">
+        <h4>Boutique</h4>
+        <ul>
+          <li><a href="produit-icon.html">ICON — Carrée Rétro</a></li>
+          <li><a href="produit-cartier.html">PRESTIGE — Style Cartier</a></li>
+          <li><a href="panier.html">Panier</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Aide</h4>
+        <ul>
+          <li><a href="#">Livraison 48-72h</a></li>
+          <li><a href="#">Retours & Remboursements</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos Engagements</h4>
+        <ul>
+          <li>✓ Livraison gratuite 48-72h</li>
+          <li>✓ Retour gratuit 30 jours</li>
+          <li>✓ Paiement 100% sécurisé</li>
+          <li>✓ Offre 2+1 permanente</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 LUXFRAME Paris
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initConfirmPage();
+    });
+  </script>
+</body>
+</html>
